@@ -7,13 +7,13 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Junseo Kim # add your name
-author-img: photo.png # add your photo
+author-img: me.jpg # add your photo
 about-author: Research & Project # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
+#social-twitter: # add your Twitter handle
+#social-facebook: # add your Facebook handle
 social-github: junseokim19 # add your Github handle
-social-linkedin: junseo-kim-875b5424b# add your Linkedin handle
-social-email: # add your Email address
+social-linkedin: junseo-kim-875b5424b # add your Linkedin handle
+social-email: kimjs990919@gmail.com # add your Email address
 
 # Disqus
 discus-identifier: junseokim19 # add your discus identifier
