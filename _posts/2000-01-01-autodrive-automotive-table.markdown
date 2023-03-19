@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automotive 글 목록
+title: computervision 글 목록
 date: 2000-01-01 00:00:00
 img: autodrive/automotive/automotive.png
 categories: [computervision] 
