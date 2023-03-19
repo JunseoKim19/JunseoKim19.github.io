@@ -3,7 +3,7 @@ layout: post
 title: 딥 러닝 관련 글 목차
 date: 2000-01-01 00:00:00
 img: dl/concept/deep-neural-network.jpg
-categories: [dl-concept] 
+categories: [computervision-YOLO] 
 tags: [python, deep learning, dl] # add tag
 ---
 
