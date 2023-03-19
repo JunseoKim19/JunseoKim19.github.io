@@ -8,9 +8,9 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Junseo Kim # add your name
 author-img: My/photo.jpg # add your photo
-about-author: Computer Vision for Autonomous Driving
-#social-twitter: gaussian37 # add your Twitter handle
-#social-facebook: jinsolkima # add your Facebook handle
+about-author: Research & Project
+#social-twitter:  # add your Twitter handle
+social-facebook: kim.junseo.12 # add your Facebook handle
 social-github: junseokim19 # add your Github handle
 social-linkedin: junseo-kim-875b5424b # add your Linkedin handle
 social-email: kimjs990919@gmail.com # add your Email address
