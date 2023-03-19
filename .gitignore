@@ -1,3 +1,4 @@
+.idea
 _site
 .sass-cache
 .jekyll-metadata
@@ -32,3 +33,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Directories
+**/.ipynb_checkpoints/
+.idea/misc.xml
+.idea/workspace.xml

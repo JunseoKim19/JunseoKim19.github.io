@@ -1,0 +1,23 @@
+---
+layout: post
+title: Markdown Reference
+date: 2018-07-05 00:10:00 +0300
+img: markdown.png # Add image post (optional)
+tags: [markdown, md] # add tag
+---
+# Markdown Reference
+
+## Text
+
+### Highlight
+Use **mark** & **/mark**keyword. <br>
+<mark> highlight </mark> <br>   
+    
+### Python Code
+
+Use 3 times ` and wrap the code with it. (```)
+```python
+s = "I am KIM JINSOL"
+print s
+```
+

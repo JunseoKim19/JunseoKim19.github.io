@@ -1,0 +1,117 @@
+---
+layout: post
+title: blog 전체 글 목록
+date: 9999-12-31 23:00:00 +0300
+img: library.jpg
+tags: [table] # add tag
+---
+
+<br>
+
+## **Author**
+
+<br>
+
+- Name : [JINSOL KIM](https://www.linkedin.com/in/jinsolkima)
+- **Life is gaussian and dynamic programming.**
+- 이 블로그의 모든 글들이 저의 **MEME**으로써 많은 분들에게 도움 및 영향을 줄 수 있기를 바랍니다.
+- 글을 읽다가 문의 사항이 있으시면 댓글/메일을 이용하여 글을 남겨주시면 확인 후 답변드리겠습니다.
+
+<br>
+
+## **ROI**
+
+<br>
+
+- C / Python
+- Machine/Deep Learning
+- Computer Vision (Segmentation, Detection)
+- Optimal State Estimation
+
+<br>
+
+## **Total table**
+
+<br>
+
+- 아래 세부 목록을 클릭하여 관심 있는 글을 찾아가시면 됩니다.
+
+<br>
+
+## **Autonomous Driving**
+
+<br>
+
+- [Autonomous Driving](https://gaussian37.github.io/autodrive-concept-table/)
+- [Optimal State Estimation](https://gaussian37.github.io/autodrive-ose-table/)
+- [Probabilistic Robotics]()
+- [Automotive](https://gaussian37.github.io/autodrive-automotive-table/)
+- [Self-Driving Cars (Coursera)](https://gaussian37.github.io/autodrive-sdcc-table/)
+
+<br>
+
+## **Math**
+
+<br>
+
+- [Algorithm](https://gaussian37.github.io/math-algorithm-table/)
+- [Problem Solving](https://gaussian37.github.io/math-ps-table/)
+- [Linear Algebra](https://gaussian37.github.io/math-la-table/)
+- [Probability](https://gaussian37.github.io/math-pb-table/)
+- [Calculus](https://gaussian37.github.io/math-calculus-Table/)
+- [Game Theory](https://gaussian37.github.io/math-game-table/)
+- [Mathematics For Machine Learning](https://gaussian37.github.io/math-mfml-table/)
+
+<br>
+
+## **Machine Learning**
+
+<br>
+
+- [Machine Learning Concept](https://gaussian37.github.io/ml-concept-table/)
+- [Pattern Recognition and Machine Learning](https://gaussian37.github.io/ml-prml-table/)
+
+<br>
+
+## **Deep Learning**
+
+<br>
+
+- [Deep Learning Concept](https://gaussian37.github.io/dl-concept-table/)
+- [Pytorch](https://gaussian37.github.io/dl-pytorch-table/)
+- [Deeplearning.ai](https://gaussian37.github.io/dl-dlai-table/)
+- [Hugo Larochelle의 딥러닝 강의](https://gaussian37.github.io/dl-larochelle-table/)
+
+<br>
+
+## **Vision**
+
+<br>
+
+- [Vision Concept](https://gaussian37.github.io/vision-concept-table/)
+- [Signal and System](https://gaussian37.github.io/vision-signal-table/)
+- [Segmentation](https://gaussian37.github.io/vision-segmentation-table/)
+- [Detection](https://gaussian37.github.io/vision-detection-table/)
+- [Opencv](https://gaussian37.github.io/vision-opencv-table/)
+
+<br>
+
+## **Python**
+
+<br>
+
+- [Basic & Pandas & Numpy](https://gaussian37.github.io/python/basic/)
+- [Django](https://gaussian37.github.io/python/django/)
+- [Django-RestFramework](https://gaussian37.github.io/python/rest/)
+- [Crawling](https://gaussian37.github.io/python/crawling/)
+- [Embedded](https://gaussian37.github.io/python/embedded/)
+- [GUI](https://gaussian37.github.io/python/gui/)
+- [ETC](https://gaussian37.github.io/python/etc/)
+
+
+## **C**
+
+<br>
+
+- [C](https://gaussian37.github.io/c-concept-table/)
+- [Linux](https://gaussian37.github.io/c-linux-table/)

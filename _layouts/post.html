@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+
 <article class="article-page">
   <div class="page-content">
     {% if page.img %}
@@ -12,13 +13,16 @@ layout: main
         {% endif %}
       </figure>
     </div> <!-- End Page Cover Image -->
+
     {% else %}
     {% endif %}
     <div class="wrap-content">
       <header class="header-page">
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-      </header>
+
+      </header>      
+      
       {{content | markdownify}}
       <div class="page-footer">
         <div class="page-share">
@@ -33,6 +37,7 @@ layout: main
         </div>
       </div>
       {% include disqus.html %}
+
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->
