@@ -1,34 +1,35 @@
-title: JunseoKim19
-description: > # this means to ignore newlines until "baseurl:"
+title: gaussian37
+description: # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://junseokim19.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ''
+url: "https://junseokim19.github.io"
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Junseo Kim # add your name
-author-img: me.jpg # add your photo
-about-author: Research & Project # add description
-#social-twitter: # add your Twitter handle
-#social-facebook: # add your Facebook handle
-social-github: junseokim19 # add your Github handle
-social-linkedin: junseo-kim-875b5424b # add your Linkedin handle
-social-email: kimjs990919@gmail.com # add your Email address
+author: JINSOL KIM # add your name
+author-img: My/me.jpg # add your photo
+about-author: Computer Vision for Autonomous Driving
+social-twitter: gaussian37 # add your Twitter handle
+social-facebook: jinsolkima # add your Facebook handle
+social-github: gaussian37 # add your Github handle
+social-linkedin: jinsolkima # add your Linkedin handle
+social-email: jinsolkima@gmail.com # add your Email address
 
 # Disqus
-discus-identifier: junseokim19 # add your discus identifier
+discus-identifier: gaussian37 # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: Google Analytics
 
 # Build Settings
 markdown: kramdown
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
 
-paginate: 8
+paginate: 10
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
