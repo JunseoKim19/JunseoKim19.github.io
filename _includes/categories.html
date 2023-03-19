@@ -41,8 +41,16 @@
                 </div>
             </li>
 
-            <li class="nav-item {% if page.url == '/computervision/' %} active {% endif %}">
-                <a class="nav-link" href="{{ site.baseurl }}/">Computer Vision</a>
+            <li class="nav-item dropdown
+            {% if page.url == '/computervision/YOLO/'%} active {% endif %}">
+                <a class="nav-link dropdown-toggle cursor" onclick="clickDropdown('computervision-dropdown')"
+                   role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Computervision
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="computervision-dropdown">
+                    <a class="dropdown-item" href="{{ "/computervision/YOLO" | prepend: site.baseurl }}">YOLO</a>
+                </div>
             </li>
         </ul>
     </div>
