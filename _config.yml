@@ -6,17 +6,17 @@ url: "https://junseokim19.github.io"
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: JINSOL KIM # add your name
-author-img: My/me.jpg # add your photo
+author: Junseo Kim # add your name
+author-img: My/photo.jpg # add your photo
 about-author: Computer Vision for Autonomous Driving
-social-twitter: gaussian37 # add your Twitter handle
-social-facebook: jinsolkima # add your Facebook handle
+#social-twitter: gaussian37 # add your Twitter handle
+#social-facebook: jinsolkima # add your Facebook handle
 social-github: junseokim19 # add your Github handle
-social-linkedin: jinsolkima # add your Linkedin handle
+social-linkedin: junseo-kim-875b5424b # add your Linkedin handle
 social-email: kimjs990919@gmail.com # add your Email address
 
 # Disqus
-discus-identifier: gaussian37 # add your discus identifier
+discus-identifier: junseokim19 # add your discus identifier
 
 # Tracker
 analytics: Google Analytics
