@@ -6,17 +6,14 @@
             </li>
 
             <li class="nav-item dropdown
-            {% if page.url == '/autodrive/concept/' or page.url == '/autodrive/ose/' or page.url == '/autodrive/sdcc/' or page.url == '/autodrive/lidar/'%} active {% endif %}">
-                <a class="nav-link dropdown-toggle cursor" onclick="clickDropdown('autodrive-dropdown')"
+            {% if page.url == '/state_estimation/ME8135/'%} active {% endif %}">
+                <a class="nav-link dropdown-toggle cursor" onclick="clickDropdown('state_estimation-dropdown')"
                    role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Autonomous Driving
+                    State Estimation
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="autodrive-dropdown">
-                    <a class="dropdown-item" href="{{ "/autodrive/concept" | prepend: site.baseurl }}">Concept</a>
-                    <a class="dropdown-item" href="{{ "/autodrive/automotive" | prepend: site.baseurl }}">Automotive</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{ "/autodrive/sdcc" | prepend: site.baseurl }}">Self-Driving Cars (Coursera)</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="state_estimation-dropdown">
+                    <a class="dropdown-item" href="{{ "/state_estimation/ME8135" | prepend: site.baseurl }}">ME8135(State_Estimation)</a>
                 </div>
             </li>
 
