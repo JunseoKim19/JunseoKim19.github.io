@@ -1,9 +1,9 @@
 ---
-title: "Allan Lab - Team"
+title: "Junseo Kim - Me"
 layout: gridlay
-excerpt: "Allan Lab: Team members"
+excerpt: "Junseo Kim: About Me"
 sitemap: false
-permalink: /team/
+permalink: /Me/
 ---
 
 # Group Members

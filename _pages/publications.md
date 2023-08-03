@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Publications"
+title: "Junseo Kim - Publications"
 layout: gridlay
-excerpt: "Allan Lab -- Publications."
+excerpt: "Junseo Kim -- Publications."
 sitemap: false
 permalink: /publications/
 ---
