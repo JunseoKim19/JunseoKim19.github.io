@@ -3,7 +3,7 @@ title: "Junseo Kim - Me"
 layout: gridlay
 excerpt: "Junseo Kim: About Me"
 sitemap: false
-permalink: /Me/
+permalink: /team/
 ---
 
 # Group Members
