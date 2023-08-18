@@ -6,13 +6,9 @@ sitemap: false
 permalink: /team/
 ---
 
-# Group Members
-
- **We are  looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
-
 <div class="row">
   <div class="col-sm-6 clearfix">
-    <img src="/images/teampic/junseo_kim.jpg" class="img-responsive" width="25%" style="float: left" />
+    <img src="/images/teampic/junseo_kim.png" class="img-responsive" width="25%" style="float: left" />
     <h4>Junseo Kim</h4>
     <i>PhD student, University of XYZ</i>
     <ul style="overflow: hidden">
