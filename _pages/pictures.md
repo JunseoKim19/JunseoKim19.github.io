@@ -2,7 +2,7 @@
 title: "Junseo Kim - Review"
 layout: piclay
 excerpt: "Junseo Kim -- Review"
-permalink: /pictures/
+permalink: /Review/
 ---
 
 # Pictures

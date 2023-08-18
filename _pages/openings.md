@@ -3,7 +3,7 @@ title: "Junseo Kim - Study"
 layout: textlay
 excerpt: "Openings"
 sitemap: false
-permalink: /vacancies
+permalink: /study
 ---
 
 # Open positions
