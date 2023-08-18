@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Pictures"
+title: "Junseo Kim - Review"
 layout: piclay
-excerpt: "Allan Lab -- Pictures"
+excerpt: "Junseo Kim -- Review"
 permalink: /pictures/
 ---
 
