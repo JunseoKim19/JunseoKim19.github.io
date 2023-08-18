@@ -66,8 +66,9 @@ permalink: /
 </div>
 {% endif %}
 
+<br>
 My Full CV can be found here:
-[home 1]({{ site.baseurl }}/downloads/CV.pdf)
+[Curriculum Vitae]({{ site.baseurl }}/downloads/CV.pdf)
 
 <figure class="fourth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_TMU.png" style="width: 110px">
