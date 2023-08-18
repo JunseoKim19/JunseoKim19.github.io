@@ -8,7 +8,7 @@ permalink: /team/
 
 <div class="row">
   <div class="col-sm-6 clearfix">
-    <img src="/images/teampic/junseo_kim.jpg" class="img-responsive" width="25%" style="float: left" alt="Junseo Kim" />
+    <img src="{{ '/images/teampic/junseo_kim.jpg' | relative_url }}" class="img-responsive" width="25%" style="float: left" alt="Junseo Kim" />
     <h4>Junseo Kim</h4>
     <i>PhD student, University of XYZ</i>
     <ul style="overflow: hidden">
@@ -17,4 +17,3 @@ permalink: /team/
     </ul>
   </div>
 </div>
-
