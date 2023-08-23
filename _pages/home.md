@@ -72,5 +72,5 @@ My Full CV can be found here:
 
 <figure class="fourth">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_TMU.png" style="width: 110px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_FEA.png" style="width: 110px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_FEA.png" style="width: 200px">
 </figure>
