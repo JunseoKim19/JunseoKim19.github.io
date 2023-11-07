@@ -2,7 +2,7 @@
     display: flex; /* Use flexbox to center the content */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    font-weight: 700; /* Bold font weight as specified */
+    font-weight: 1000; /* Bold font weight as specified */
     font-size: 1.2rem; /* Larger font size, consistent with .big-icon */
     color: #23252f; /* Color of the text set to #23252f */
     background-color: #08c; /* Background color set to #08c */
@@ -15,7 +15,7 @@
     border: 2px solid #08c; /* Thicker border with the background color */
     border-radius: 0.25em; /* Optional: round the corners */
     box-sizing: border-box;
-    width: 1.6em; /* Adjust as needed to match the desired height */
-    height: 1.6em; /* Adjust as needed to match the desired width */
+    width: 1.55em; /* Adjust as needed to match the desired height */
+    height: 1.55em; /* Adjust as needed to match the desired width */
   }
   
