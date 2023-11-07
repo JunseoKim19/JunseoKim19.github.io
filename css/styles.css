@@ -1,9 +1,15 @@
 .cv-text-icon {
     display: inline-block;
     font-weight: 400; /* Normal font weight as specified */
-    font-size: 2rem; /* Larger font size */
+    font-size: 2rem; /* Larger font size, consistent with .big-icon */
     color: #23252f; /* Color of the text set to #23252f */
     background-color: #08c; /* Background color set to #08c */
+    line-height: 1; /* Aligns with your other icons */
+    -moz-osx-font-smoothing: grayscale; /* Improve text rendering on macOS */
+    -webkit-font-smoothing: antialiased; /* Improve text rendering on Webkit browsers */
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
     padding: 0.25em 0.4em; /* Add some padding around the text */
     border: 2px solid #08c; /* Thicker border with the background color */
     border-radius: 0.25em; /* Optional: round the corners */
