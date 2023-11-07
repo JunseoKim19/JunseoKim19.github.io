@@ -1,7 +1,7 @@
 .cv-text-icon {
     display: inline-block;
-    font-weight: 200; /* Normal font weight as specified */
-    font-size: 1rem; /* Larger font size, consistent with .big-icon */
+    font-weight: 400; /* Normal font weight as specified */
+    font-size: 1.2rem; /* Larger font size, consistent with .big-icon */
     color: #23252f; /* Color of the text set to #23252f */
     background-color: #08c; /* Background color set to #08c */
     line-height: 1; /* Aligns with your other icons */
