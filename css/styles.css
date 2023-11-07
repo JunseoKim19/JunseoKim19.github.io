@@ -1,10 +1,11 @@
 .cv-text-icon {
-    display: inline-block;
-    font-weight: 700; /* Normal font weight as specified */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-weight: 700; /* Bold font weight as specified */
     font-size: 1.2rem; /* Larger font size, consistent with .big-icon */
     color: #23252f; /* Color of the text set to #23252f */
     background-color: #08c; /* Background color set to #08c */
-    line-height: 1.2; /* Adjust line height to match font-size for a square appearance */
     -moz-osx-font-smoothing: grayscale; /* Improve text rendering on macOS */
     -webkit-font-smoothing: antialiased; /* Improve text rendering on Webkit browsers */
     font-style: normal;
@@ -13,10 +14,8 @@
     padding: 0.25em; /* Adjust padding to be uniform on all sides */
     border: 2px solid #08c; /* Thicker border with the background color */
     border-radius: 0.25em; /* Optional: round the corners */
-    text-align: center;
     box-sizing: border-box;
-    /* Set width and height to the same value to create a square */
-    width: 1.5em; /* Adjust as needed to match the desired height */
-    height: 1.5em; /* Adjust as needed to match the desired width */
+    width: 1.6em; /* Adjust as needed to match the desired height */
+    height: 1.6em; /* Adjust as needed to match the desired width */
   }
   
