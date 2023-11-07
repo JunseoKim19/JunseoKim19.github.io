@@ -1,0 +1,12 @@
+.cv-text-icon {
+    display: inline-block;
+    font-weight: bold; /* Make the text bold */
+    font-size: 1em; /* Match the size of your other icons */
+    padding: 0.25em; /* Add some padding around the text */
+    border: 1px solid #000; /* Add a border */
+    border-radius: 0.25em; /* Optional: round the corners */
+    text-align: center;
+    width: 2em; /* Set a fixed width */
+    box-sizing: border-box;
+  }
+  
