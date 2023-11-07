@@ -16,7 +16,7 @@
     text-align: center;
     box-sizing: border-box;
     /* Set width and height to the same value to create a square */
-    width: 2.5em; /* Adjust as needed to match the desired height */
-    height: 2.5em; /* Adjust as needed to match the desired width */
+    width: 1.5em; /* Adjust as needed to match the desired height */
+    height: 1.5em; /* Adjust as needed to match the desired width */
   }
   
