@@ -11,11 +11,11 @@
     width: auto; /* Adjust width as needed */
     box-sizing: border-box;
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
-  }
+}
   
-  .cv-text-icon:hover {
+.cv-text-icon:hover {
     color: #fff; /* White text on hover */
     background-color: #0e76a8; /* LinkedIn color background on hover */
-  }
+}
   
   
