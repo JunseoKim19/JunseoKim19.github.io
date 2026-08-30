@@ -57,8 +57,8 @@
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark">
 
-  <!-- Applies the dark theme before first paint; must stay ahead of the page content. -->
-  <script src="/js/wowchemy-init.min.6c07fd79b08c404df0504bd310968f2f.js"></script>
+  <!-- Applies the light/dark preference before first paint; must stay first in <body>. -->
+  <script src="/js/site-init.js"></script>
 
   <!-- ==========================================================================
        Header / navigation
@@ -94,6 +94,28 @@
               </li>
             </ul>
           </div>
+
+          <!-- Light/dark menu. The bundled theme script binds these three
+               js-set-theme-* classes and needs all three present. -->
+          <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+            <li class="nav-item dropdown theme-dropdown">
+              <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true"
+                 aria-expanded="false" aria-label="Display preferences">
+                <i class="fas fa-adjust" aria-hidden="true"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item js-set-theme-light" href="#">
+                  <i class="fas fa-sun" aria-hidden="true"></i> Light
+                </a>
+                <a class="dropdown-item js-set-theme-dark" href="#">
+                  <i class="fas fa-moon" aria-hidden="true"></i> Dark
+                </a>
+                <a class="dropdown-item js-set-theme-auto" href="#">
+                  <i class="fas fa-adjust" aria-hidden="true"></i> Automatic
+                </a>
+              </div>
+            </li>
+          </ul>
 
         </div>
       </nav>
@@ -377,6 +399,8 @@
                      href="https://sites.google.com/view/bit-vio/home" target="_blank" rel="noopener">Project Website</a>
                   <a class="btn btn-outline-primary btn-page-header btn-sm"
                      href="/publication/jason-bitvio-ICRA/ICRA24_3859_MS.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://arxiv.org/abs/2403.09882" target="_blank" rel="noopener">arXiv</a>
                 </div>
               </div>
               <div class="ml-3">
