@@ -54,3 +54,15 @@
 .stream-item[hidden] {
   display: none !important;
 }
+
+/* Linked publication titles. The theme already shifts them to the accent colour
+   on hover; suppress only the dark-mode underline so headings read as headings
+   until pointed at. */
+.stream-item .article-title a {
+  text-decoration: none;
+}
+
+.stream-item .article-title a:hover,
+.stream-item .article-title a:focus {
+  text-decoration: underline;
+}

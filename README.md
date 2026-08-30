@@ -36,7 +36,8 @@ originally came from. Treat them as read-only; put custom rules in
 2. Copy an existing `<div class="media stream-item view-compact">` block in the
    Publications section of `index.html` and edit it in place:
    - `data-topics` — one or more topics, space separated (see below)
-   - `.article-title` — paper title
+   - `.article-title` — paper title; once published, wrap the text in an
+     `<a>` pointing at the publisher page (unpublished work stays plain text)
    - `.article-style` — venue
    - `.stream-meta` — authors; wrap your own name in `.author-highlighted` and
      add `<i class="author-notes fas fa-star" data-toggle="tooltip"
