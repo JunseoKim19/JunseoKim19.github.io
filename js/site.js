@@ -113,6 +113,31 @@
   }
 
   /* -------------------------------------------------------------------------
+     Theme menu icon.
+
+     The navbar icon shows which theme is active: a moon in dark, a sun in
+     light. The bundled theme script fires a `wcThemeChange` event on every
+     switch, carrying the theme it is about to apply, so we follow that rather
+     than watching the body class. Nothing fires on load, so seed it from the
+     class js/site-init.js has already set.
+     ------------------------------------------------------------------------- */
+  function initThemeIcon() {
+    var icon = document.querySelector('.js-theme-icon');
+    if (!icon) return;
+
+    function sync(isDark) {
+      icon.classList.toggle('fa-moon', isDark);
+      icon.classList.toggle('fa-sun', !isDark);
+    }
+
+    sync(document.body.classList.contains('dark'));
+
+    document.addEventListener('wcThemeChange', function (event) {
+      sync(Boolean(event.detail && event.detail.isDarkTheme()));
+    });
+  }
+
+  /* -------------------------------------------------------------------------
      The bundled theme script unconditionally binds "/" to a search modal, but
      this site ships no search index and no modal markup, so the shortcut would
      only lock page scrolling. Undo that state if it ever fires.
@@ -127,5 +152,6 @@
   }
 
   initPublications();
+  initThemeIcon();
   guardSearchHotkey();
 })();

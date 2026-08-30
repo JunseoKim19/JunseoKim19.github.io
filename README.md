@@ -84,6 +84,10 @@ runs first thing in `<body>` so the page never flashes the wrong theme. The
 bundled theme script owns the menu itself: it binds the `js-set-theme-*`
 classes and ticks the active item.
 
+The navbar icon shows which theme is active — a moon in dark, a sun in light.
+`js/site.js` seeds it from the body class on load and then follows the
+`wcThemeChange` event the theme script fires on every switch.
+
 A first-time visitor gets dark, set by `DEFAULT_THEME` in `js/site-init.js`;
 change that constant to `'0'` to default to light. Any other stored value —
 including `2`, the theme's "follow the OS" mode, which this menu no longer
