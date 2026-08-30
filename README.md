@@ -71,14 +71,21 @@ stays visible.
 
 ## Light and dark
 
-The navbar menu offers Light, Dark and Automatic. The choice is stored in
-`localStorage` under `wcTheme` (`0` light, `1` dark, `2` follow the OS) and
-applied by `js/site-init.js`, which runs first thing in `<body>` so the page
-never flashes the wrong theme. The bundled theme script owns the menu itself:
-it binds the three `js-set-theme-*` classes, ticks the active item, and watches
-for OS preference changes.
+The navbar menu offers Light and Dark. The choice is stored in `localStorage`
+under `wcTheme` (`0` light, `1` dark) and applied by `js/site-init.js`, which
+runs first thing in `<body>` so the page never flashes the wrong theme. The
+bundled theme script owns the menu itself: it binds the `js-set-theme-*`
+classes and ticks the active item.
 
-A first-time visitor gets dark, set by `DEFAULT_THEME` in `js/site-init.js`.
-Change that constant to `'2'` to follow the visitor's OS instead, or `'0'` to
-default to light. Both palettes already live in the theme stylesheet, keyed on
-`body.dark` — there is nothing to build.
+A first-time visitor gets dark, set by `DEFAULT_THEME` in `js/site-init.js`;
+change that constant to `'0'` to default to light. Any other stored value —
+including `2`, the theme's "follow the OS" mode, which this menu no longer
+offers — is normalised back to the default on the next visit.
+
+The menu carries a hidden third item, `js-set-theme-auto`. The theme script's
+menu-highlighting function dereferences all three items without a null check,
+so removing it from the DOM breaks every switch; `d-none` keeps it out of the
+menu instead.
+
+Both palettes already live in the theme stylesheet, keyed on `body.dark` —
+there is nothing to build.
