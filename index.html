@@ -259,6 +259,11 @@
 
           <div class="col-12 col-lg-8">
 
+            <!-- Free-text search over title, venue and authors. Combines with the
+                 topic buttons below: a paper shows when it satisfies both. -->
+            <input type="search" class="pub-search" placeholder="Search titles, authors, venues…"
+                   aria-label="Search publications" autocomplete="off" spellcheck="false">
+
             <!-- Topic filter. Buttons match the `data-topics` on each entry below;
                  the paper counts are filled in by js/site.js. -->
             <div class="pub-filter" role="group" aria-label="Filter publications by topic">
@@ -270,14 +275,14 @@
               <button type="button" class="btn btn-outline-primary" data-topic="planning-control" aria-pressed="false">Planning &amp; Control</button>
             </div>
 
-            <!-- RIO — arXiv 2026 -->
+            <!-- RIO — RSS 2026 -->
             <div class="media stream-item view-compact" data-topics="learning">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning
                 </div>
                 <div class="article-style">
-                  <em>Accepted at Robotics: Science and Systems (RSS), 2026</em>
+                  <em>Robotics: Science and Systems (RSS), 2026</em>
                 </div>
                 <div class="stream-meta article-metadata">
                   <div>
@@ -313,7 +318,144 @@
               </div>
             </div>
 
-            <!-- TCB-VIO — RA-L -->
+            <!-- MobileOcc — ECCV 2026 -->
+            <div class="media stream-item view-compact" data-topics="computer-vision datasets-benchmarks">
+              <div class="media-body">
+                <div class="section-subheading article-title mb-0 mt-0">
+                  MobileOcc: A Human-Aware Semantic Occupancy Dataset for Mobile Robots
+                </div>
+                <div class="article-style">
+                  <em>European Conference on Computer Vision (ECCV), 2026</em>
+                </div>
+                <div class="stream-meta article-metadata">
+                  <div>
+                    <span class="author-highlighted">Junseo Kim</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Guido Dumont</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Xinyu Gao</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Gang Chen</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Holger Caesar</span>,
+                    <span>Javier Alonso-Mora</span>
+                  </div>
+                </div>
+                <div class="btn-links">
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://autonomousrobots.nl/paper_websites/mobileocc" target="_blank" rel="noopener">Project Website</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="/publication/jason-mobileocc/mobileocc_preprint.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://arxiv.org/abs/2511.16949" target="_blank" rel="noopener">arXiv</a>
+                </div>
+              </div>
+              <div class="ml-3">
+                <img class="pub-thumb" src="/publication/jason-mobileocc/mobileocc_img.png" alt="MobileOcc">
+              </div>
+            </div>
+
+            <!-- Inverse k-visibility — Autonomous Robots 2026 -->
+            <div class="media stream-item view-compact" data-topics="localization-mapping">
+              <div class="media-body">
+                <div class="section-subheading article-title mb-0 mt-0">
+                  <a href="https://link.springer.com/article/10.1007/s10514-026-10243-w" target="_blank" rel="noopener">Inverse k-visibility for RSSI-based Indoor Geometric Mapping</a>
+                </div>
+                <div class="article-style">
+                  <em>Springer Autonomous Robots, 2026</em>
+                </div>
+                <div class="stream-meta article-metadata">
+                  <div>
+                    <span class="author-highlighted">Junseo Kim</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Matthew Lisondra</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Yeganeh Bahoo</span>,
+                    <span>Sajad Saeedi</span>
+                  </div>
+                </div>
+                <div class="btn-links">
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://sites.google.com/view/structure-from-wifi/home" target="_blank" rel="noopener">Project Website</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="/publication/jason-sfw-sensor/Inverse_k_visibility_preprint.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://arxiv.org/abs/2408.07757" target="_blank" rel="noopener">arXiv</a>
+                </div>
+              </div>
+              <div class="ml-3">
+                <img class="pub-thumb" src="/publication/jason-sfw-sensor/graphical_abstract.png" alt="Inverse k-visibility">
+              </div>
+            </div>
+
+            <!-- M3RS — Journal of Field Robotics 2026 -->
+            <div class="media stream-item view-compact" data-topics="planning-control">
+              <div class="media-body">
+                <div class="section-subheading article-title mb-0 mt-0">
+                  <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rob.70288" target="_blank" rel="noopener">M&sup3;RS: Multi-Robot, Multi-Objective, and Multi-Mode Routing and Scheduling</a>
+                </div>
+                <div class="article-style">
+                  <em>Journal of Field Robotics, 2026</em>
+                </div>
+                <div class="stream-meta article-metadata">
+                  <div>
+                    <span>Ishaan Mehta</span>,
+                    <span class="author-highlighted">Junseo Kim</span>,
+                    <span>Sharareh Taghipour</span>,
+                    <span>Sajad Saeedi</span>
+                  </div>
+                </div>
+                <div class="btn-links">
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://sites.google.com/view/g-robot/m3rs/" target="_blank" rel="noopener">Project Website</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="/publication/jason-grobot/M3RS.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://youtu.be/EYG6m8O7CHw" target="_blank" rel="noopener">Simulation Video</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://youtu.be/_fRkirupQFU" target="_blank" rel="noopener">Hardware Video</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://arxiv.org/abs/2403.16275" target="_blank" rel="noopener">arXiv</a>
+                </div>
+              </div>
+              <div class="ml-3">
+                <img class="pub-thumb" src="/publication/jason-grobot/move.png" alt="M3RS">
+              </div>
+            </div>
+
+            <!-- Exposing Blindspots — IASEAI 2026 -->
+            <div class="media stream-item view-compact" data-topics="computer-vision datasets-benchmarks">
+              <div class="media-body">
+                <div class="section-subheading article-title mb-0 mt-0">
+                  <a href="https://ojs.aaai.org/index.php/IASEAI/article/view/43063" target="_blank" rel="noopener">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models</a>
+                </div>
+                <div class="article-style">
+                  <em>International Association for Safe and Ethical Artificial Intelligence (IASEAI), 2026</em>
+                </div>
+                <div class="stream-meta article-metadata">
+                  <div>
+                    <span>Huichan Seo</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Sieun Choi</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Minki Hong</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
+                    <span>Yi Zhou</span>,
+                    <span class="author-highlighted">Junseo Kim</span>,
+                    <span>Lukman Ismaila</span>,
+                    <span>Naomi Etori</span>,
+                    <span>Mehul Agarwal</span>,
+                    <span>Zhixuan Liu</span>,
+                    <span>Jihie Kim</span>,
+                    <span>Jean Oh</span>
+                  </div>
+                </div>
+                <div class="btn-links">
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://seochan99.github.io/ECB/" target="_blank" rel="noopener">Project Website</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="/publication/jason-culture/culture_preprint.pdf" target="_blank" rel="noopener">PDF</a>
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://arxiv.org/abs/2510.20042" target="_blank" rel="noopener">arXiv</a>
+                </div>
+              </div>
+              <div class="ml-3">
+                <img class="pub-thumb" src="/publication/jason-culture/culture_image2.png" alt="Exposing Blindspots">
+              </div>
+            </div>
+
+            <!-- TCB-VIO — RA-L 2025 -->
             <div class="media stream-item view-compact" data-topics="localization-mapping">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
@@ -408,142 +550,7 @@
               </div>
             </div>
 
-            <!-- MobileOcc — under review -->
-            <div class="media stream-item view-compact" data-topics="computer-vision datasets-benchmarks">
-              <div class="media-body">
-                <div class="section-subheading article-title mb-0 mt-0">
-                  MobileOcc: A Human-Aware Semantic Occupancy Dataset for Mobile Robots
-                </div>
-                <div class="article-style">
-                  <em>European Conference on Computer Vision (ECCV), 2026</em>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <div>
-                    <span class="author-highlighted">Junseo Kim</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Guido Dumont</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Xinyu Gao</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Gang Chen</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Holger Caesar</span>,
-                    <span>Javier Alonso-Mora</span>
-                  </div>
-                </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://autonomousrobots.nl/paper_websites/mobileocc" target="_blank" rel="noopener">Project Website</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="/publication/jason-mobileocc/mobileocc_preprint.pdf" target="_blank" rel="noopener">PDF</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://arxiv.org/abs/2511.16949" target="_blank" rel="noopener">arXiv</a>
-                </div>
-              </div>
-              <div class="ml-3">
-                <img class="pub-thumb" src="/publication/jason-mobileocc/mobileocc_img.png" alt="MobileOcc">
-              </div>
-            </div>
-
-            <!-- Inverse k-visibility — under review -->
-            <div class="media stream-item view-compact" data-topics="localization-mapping">
-              <div class="media-body">
-                <div class="section-subheading article-title mb-0 mt-0">
-                  <a href="https://link.springer.com/article/10.1007/s10514-026-10243-w" target="_blank" rel="noopener">Inverse k-visibility for RSSI-based Indoor Geometric Mapping</a>
-                </div>
-                <div class="article-style">
-                  <em>Springer Autonomous Robots, 2026</em>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <div>
-                    <span class="author-highlighted">Junseo Kim</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Matthew Lisondra</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Yeganeh Bahoo</span>,
-                    <span>Sajad Saeedi</span>
-                  </div>
-                </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://sites.google.com/view/structure-from-wifi/home" target="_blank" rel="noopener">Project Website</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="/publication/jason-sfw-sensor/Inverse_k_visibility_preprint.pdf" target="_blank" rel="noopener">PDF</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://arxiv.org/abs/2408.07757" target="_blank" rel="noopener">arXiv</a>
-                </div>
-              </div>
-              <div class="ml-3">
-                <img class="pub-thumb" src="/publication/jason-sfw-sensor/graphical_abstract.png" alt="Inverse k-visibility">
-              </div>
-            </div>
-
-            <!-- M3RS — under review -->
-            <div class="media stream-item view-compact" data-topics="planning-control">
-              <div class="media-body">
-                <div class="section-subheading article-title mb-0 mt-0">
-                  <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rob.70288" target="_blank" rel="noopener">M&sup3;RS: Multi-Robot, Multi-Objective, and Multi-Mode Routing and Scheduling</a>
-                </div>
-                <div class="article-style">
-                  <em>Journal of Field Robotics, 2026</em>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <div>
-                    <span>Ishaan Mehta</span>,
-                    <span class="author-highlighted">Junseo Kim</span>,
-                    <span>Sharareh Taghipour</span>,
-                    <span>Sajad Saeedi</span>
-                  </div>
-                </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://sites.google.com/view/g-robot/m3rs/" target="_blank" rel="noopener">Project Website</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="/publication/jason-grobot/M3RS.pdf" target="_blank" rel="noopener">PDF</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://youtu.be/EYG6m8O7CHw" target="_blank" rel="noopener">Simulation Video</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://youtu.be/_fRkirupQFU" target="_blank" rel="noopener">Hardware Video</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://arxiv.org/abs/2403.16275" target="_blank" rel="noopener">arXiv</a>
-                </div>
-              </div>
-              <div class="ml-3">
-                <img class="pub-thumb" src="/publication/jason-grobot/move.png" alt="M3RS">
-              </div>
-            </div>
-
-            <!-- Exposing Blindspots — IASEAI 2026 -->
-            <div class="media stream-item view-compact" data-topics="computer-vision datasets-benchmarks">
-              <div class="media-body">
-                <div class="section-subheading article-title mb-0 mt-0">
-                  <a href="https://ojs.aaai.org/index.php/IASEAI/article/view/43063" target="_blank" rel="noopener">Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models</a>
-                </div>
-                <div class="article-style">
-                  <em>International Association for Safe and Ethical Artificial Intelligence (IASEAI), 2026</em>
-                </div>
-                <div class="stream-meta article-metadata">
-                  <div>
-                    <span>Huichan Seo</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Sieun Choi</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Minki Hong</span><i class="author-notes fas fa-star" data-toggle="tooltip" title="Equal contribution"></i>,
-                    <span>Yi Zhou</span>,
-                    <span class="author-highlighted">Junseo Kim</span>,
-                    <span>Lukman Ismaila</span>,
-                    <span>Naomi Etori</span>,
-                    <span>Mehul Agarwal</span>,
-                    <span>Zhixuan Liu</span>,
-                    <span>Jihie Kim</span>,
-                    <span>Jean Oh</span>
-                  </div>
-                </div>
-                <div class="btn-links">
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://seochan99.github.io/ECB/" target="_blank" rel="noopener">Project Website</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="/publication/jason-culture/culture_preprint.pdf" target="_blank" rel="noopener">PDF</a>
-                  <a class="btn btn-outline-primary btn-page-header btn-sm"
-                     href="https://arxiv.org/abs/2510.20042" target="_blank" rel="noopener">arXiv</a>
-                </div>
-              </div>
-              <div class="ml-3">
-                <img class="pub-thumb" src="/publication/jason-culture/culture_image2.png" alt="Exposing Blindspots">
-              </div>
-            </div>
+            <p class="pub-empty" hidden>No publications match that search.</p>
 
           </div>
         </div>

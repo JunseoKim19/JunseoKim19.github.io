@@ -6,14 +6,18 @@
   'use strict';
 
   /* -------------------------------------------------------------------------
-     Publication topic filter.
+     Publication search and topic filter.
 
-     Each `.stream-item` in the Publications section carries a space-separated
-     `data-topics` list; each button in `.pub-filter` carries a `data-topic`.
-     A paper may hold several topics and so appear under several buttons.
-     Without JavaScript no item is hidden, so every paper stays readable.
+     Two controls over one list. Each `.stream-item` in the Publications
+     section carries a space-separated `data-topics`; each button in
+     `.pub-filter` carries a `data-topic`. A paper shows when it satisfies the
+     selected topic AND the search box, so the two compose rather than override
+     each other. A paper may hold several topics and appear under several
+     buttons.
+
+     Without JavaScript nothing is hidden and every paper stays readable.
      ------------------------------------------------------------------------- */
-  function initPublicationFilter() {
+  function initPublications() {
     var section = document.getElementById('publications');
     if (!section) return;
 
@@ -21,41 +25,91 @@
     var items = Array.prototype.slice.call(section.querySelectorAll('.stream-item'));
     if (!buttons.length || !items.length) return;
 
-    function topicsOf(item) {
-      return (item.getAttribute('data-topics') || '').split(/\s+/);
+    var search = section.querySelector('.pub-search');
+    var empty = section.querySelector('.pub-empty');
+    var state = { topic: 'all', query: [] };
+
+    // Superscripts fold to digits so that "m3rs" finds "M³RS".
+    function normalise(text) {
+      return text
+        .toLowerCase()
+        .replace(/³/g, '3')
+        .replace(/²/g, '2')
+        .replace(/\s+/g, ' ')
+        .trim();
     }
 
-    function matches(item, topic) {
-      return topic === 'all' || topicsOf(item).indexOf(topic) !== -1;
-    }
-
-    // Derive the counts from the markup so they cannot drift out of date.
-    buttons.forEach(function (button) {
-      var topic = button.getAttribute('data-topic');
-      var count = items.filter(function (item) { return matches(item, topic); }).length;
-      var badge = document.createElement('span');
-      badge.className = 'pub-filter-count';
-      badge.textContent = count;
-      button.appendChild(document.createTextNode(' '));
-      button.appendChild(badge);
+    // Index title, venue and authors once. Button labels are deliberately left
+    // out, so typing "pdf" does not match every paper on the page.
+    items.forEach(function (item) {
+      item.searchText = normalise(['.article-title', '.article-style', '.stream-meta']
+        .map(function (selector) {
+          var el = item.querySelector(selector);
+          return el ? el.textContent : '';
+        })
+        .join(' '));
     });
 
-    function select(topic) {
-      items.forEach(function (item) {
-        item.hidden = !matches(item, topic);
+    function matchesTopic(item, topic) {
+      return topic === 'all' ||
+        (item.getAttribute('data-topics') || '').split(/\s+/).indexOf(topic) !== -1;
+    }
+
+    function matchesQuery(item) {
+      return state.query.every(function (token) {
+        return item.searchText.indexOf(token) !== -1;
       });
+    }
+
+    function render() {
+      var found = items.filter(matchesQuery);
+
+      items.forEach(function (item) {
+        item.hidden = !(matchesTopic(item, state.topic) && matchesQuery(item));
+      });
+
       buttons.forEach(function (button) {
-        var active = button.getAttribute('data-topic') === topic;
+        var topic = button.getAttribute('data-topic');
+        var active = topic === state.topic;
         button.classList.toggle('active', active);
         button.setAttribute('aria-pressed', active ? 'true' : 'false');
+
+        // Counts follow the search, so a button always says how many papers it
+        // would actually reveal.
+        var badge = button.querySelector('.pub-filter-count');
+        if (badge) {
+          badge.textContent = found.filter(function (item) {
+            return matchesTopic(item, topic);
+          }).length;
+        }
       });
+
+      if (empty) {
+        empty.hidden = items.some(function (item) { return !item.hidden; });
+      }
     }
 
     buttons.forEach(function (button) {
+      var badge = document.createElement('span');
+      badge.className = 'pub-filter-count';
+      button.appendChild(document.createTextNode(' '));
+      button.appendChild(badge);
+
       button.addEventListener('click', function () {
-        select(button.getAttribute('data-topic'));
+        state.topic = button.getAttribute('data-topic');
+        render();
       });
     });
+
+    if (search) {
+      search.addEventListener('input', function () {
+        var query = normalise(search.value);
+        state.query = query ? query.split(' ') : [];
+        render();
+      });
+    }
+
+    render();
   }
 
   /* -------------------------------------------------------------------------
@@ -72,6 +126,6 @@
     });
   }
 
-  initPublicationFilter();
+  initPublications();
   guardSearchHotkey();
 })();

@@ -12,7 +12,7 @@ and push.
 index.html               The entire site: About, Publications, Contact.
                          Each area is marked with a banner comment.
 css/site.css             Site-specific overrides (filter bar, thumbnails, map).
-js/site.js               Site-specific behaviour (publication topic filter).
+js/site.js               Site-specific behaviour (publication search + filter).
 css/vendor-bundle*.css   Bootstrap 4 + Font Awesome, from the Wowchemy theme.
 css/wowchemy*.css        Wowchemy theme stylesheet.
 js/site-init.js          Applies the light/dark preference before first paint.
@@ -47,15 +47,22 @@ originally came from. Treat them as read-only; put custom rules in
    - `img.pub-thumb` — thumbnail, or drop the whole `.ml-3` block if there
      isn't one yet
 
-Entries are listed in a hand-picked order, newest work first; rearrange the
-blocks to reorder them.
+Entries are ordered newest first by publication year; order within a year is
+not significant. Rearrange the blocks to reorder them.
 
-## Topic filter
+## Search and topic filter
 
-The buttons above the publication list filter it. Each button carries a
+The search box and the buttons above the publication list are one control
+surface: a paper shows when it satisfies both. Each button carries a
 `data-topic`, each paper a space-separated `data-topics`, and `js/site.js`
 matches them and fills in the counts — so the numbers never drift from the
-markup. A paper can hold several topics and appear under several buttons.
+markup, and they follow the search, always reporting how many papers a button
+would actually reveal. A paper can hold several topics and appear under
+several buttons.
+
+Search covers title, venue and authors only; link labels are excluded so that
+typing "pdf" does not match everything. Query words are ANDed, and superscripts
+fold to digits so "m3rs" finds M³RS.
 
 | `data-topics` value    | Button                |
 | ---------------------- | --------------------- |

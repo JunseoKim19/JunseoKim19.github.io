@@ -36,6 +36,38 @@
   border: 0;
 }
 
+/* Search box above the topic filter. Transparent background and inherited text
+   colour let one rule serve both the light and the dark palette. */
+.pub-search {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  margin-bottom: 0.85rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 2px solid rgba(128, 128, 128, 0.45);
+  border-radius: 0.25rem;
+}
+
+.pub-search:focus {
+  outline: 0;
+  border-color: #08c;
+}
+
+.pub-search::placeholder {
+  color: inherit;
+  opacity: 0.55;
+}
+
+/* Shown only when search and topic together leave nothing. */
+.pub-empty {
+  opacity: 0.7;
+  font-style: italic;
+}
+
 /* Topic filter above the publication list. Sized up from the theme's default
    button so the categories read as a primary control rather than a footnote. */
 .pub-filter {
