@@ -29,6 +29,13 @@
   var DEFAULT_THEME = '1';          // '0' light, '1' dark
   var SITE_THEME_IS_DARK = true;    // used when the OS reports no preference
 
+  // The bundled theme script calls hljs.initHighlighting() from a hard-coded
+  // branch on document-ready. This site carries no code blocks, so highlight.js
+  // was dropped — but the call remains, and the ReferenceError it throws aborts
+  // the rest of that ready handler, taking Bootstrap tooltip setup with it.
+  // A no-op stands in for the library we do not load.
+  window.hljs = window.hljs || { initHighlighting: function () {} };
+
   window.wc = {
     darkLightEnabled: true,
     isSiteThemeDark: SITE_THEME_IS_DARK

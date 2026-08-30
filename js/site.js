@@ -116,25 +116,29 @@
      Theme menu icon.
 
      The navbar icon shows which theme is active: a moon in dark, a sun in
-     light. The bundled theme script fires a `wcThemeChange` event on every
-     switch, carrying the theme it is about to apply, so we follow that rather
-     than watching the body class. Nothing fires on load, so seed it from the
-     class js/site-init.js has already set.
+     light. It follows the `dark` class on <body>, which is what actually
+     decides the palette, rather than the theme script's wcThemeChange event —
+     tracking the ground truth keeps the icon right no matter which code path
+     changed the theme, and survives that script being swapped or upgraded.
      ------------------------------------------------------------------------- */
   function initThemeIcon() {
     var icon = document.querySelector('.js-theme-icon');
     if (!icon) return;
 
-    function sync(isDark) {
+    function sync() {
+      var isDark = document.body.classList.contains('dark');
       icon.classList.toggle('fa-moon', isDark);
       icon.classList.toggle('fa-sun', !isDark);
     }
 
-    sync(document.body.classList.contains('dark'));
+    sync();
 
-    document.addEventListener('wcThemeChange', function (event) {
-      sync(Boolean(event.detail && event.detail.isDarkTheme()));
-    });
+    if (typeof window.MutationObserver === 'function') {
+      new window.MutationObserver(sync).observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+    }
   }
 
   /* -------------------------------------------------------------------------

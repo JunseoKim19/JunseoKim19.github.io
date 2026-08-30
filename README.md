@@ -15,7 +15,9 @@ css/site.css             Site-specific overrides (filter bar, thumbnails, map).
 js/site.js               Site-specific behaviour (publication search + filter).
 css/vendor-bundle*.css   Bootstrap 4 + Font Awesome, from the Wowchemy theme.
 css/wowchemy*.css        Wowchemy theme stylesheet.
-js/site-init.js          Applies the light/dark preference before first paint.
+js/site-init.js          Applies the light/dark preference before first paint,
+                         and stubs the highlight.js call the theme script makes
+                         unconditionally (see the comment in that file).
 js/                      Vendored theme scripts (jQuery + Bootstrap bundle).
 en/js/wowchemy*.js       Main theme behaviour script.
 webfonts/                Font Awesome web fonts, referenced by the vendor CSS.
@@ -41,8 +43,8 @@ originally came from. Treat them as read-only; put custom rules in
      `<a>` pointing at the publisher page (unpublished work stays plain text)
    - `.article-style` — venue
    - `.stream-meta` — authors; wrap your own name in `.author-highlighted` and
-     add `<i class="author-notes fas fa-star" data-toggle="tooltip"
-     title="Equal contribution"></i>` after equal-contribution authors
+     add `<sup class="author-notes" data-toggle="tooltip"
+     title="Equal contribution">*</sup>` after equal-contribution authors
    - `.btn-links` — link buttons
    - `img.pub-thumb` — thumbnail, or drop the whole `.ml-3` block if there
      isn't one yet
