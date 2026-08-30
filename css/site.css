@@ -35,3 +35,22 @@
   height: 420px;
   border: 0;
 }
+
+/* Topic filter above the publication list. */
+.pub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.pub-filter-count {
+  opacity: 0.65;
+  font-size: 0.85em;
+}
+
+/* Bootstrap sets `display: flex` on `.media`, which outranks the browser's
+   default `[hidden] { display: none }`. Filtered-out papers need this. */
+.stream-item[hidden] {
+  display: none !important;
+}

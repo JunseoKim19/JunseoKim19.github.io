@@ -238,8 +238,55 @@
 
           <div class="col-12 col-lg-8">
 
+            <!-- Topic filter. Buttons match the `data-topics` on each entry below;
+                 the paper counts are filled in by js/site.js. -->
+            <div class="pub-filter" role="group" aria-label="Filter publications by topic">
+              <button type="button" class="btn btn-outline-primary btn-sm active" data-topic="all" aria-pressed="true">All</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-topic="localization-mapping" aria-pressed="false">Localization &amp; Mapping</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-topic="computer-vision" aria-pressed="false">Computer Vision</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-topic="datasets-benchmarks" aria-pressed="false">Datasets &amp; Benchmarks</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-topic="learning" aria-pressed="false">Learning</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-topic="planning-control" aria-pressed="false">Planning &amp; Control</button>
+            </div>
+
+            <!-- RIO — arXiv 2026 -->
+            <div class="media stream-item view-compact" data-topics="learning">
+              <div class="media-body">
+                <div class="section-subheading article-title mb-0 mt-0">
+                  RIO: Flexible Real-Time Robot I/O for Cross-Embodiment Robot Learning
+                </div>
+                <div class="article-style">
+                  <em>arXiv preprint, 2026</em>
+                </div>
+                <div class="stream-meta article-metadata">
+                  <div>
+                    <span>Pablo Ortega-Kral</span>,
+                    <span>Eliot Xing</span>,
+                    <span>Arthur Bucker</span>,
+                    <span>Vernon Luk</span>,
+                    <span class="author-highlighted">Junseo Kim</span>,
+                    <span>Owen Kwon</span>,
+                    <span>Angchen Xie</span>,
+                    <span>Nikhil Sobanbabu</span>,
+                    <span>Yifu Yuan</span>,
+                    <span>Megan Lee</span>,
+                    <span>Deepam Ameria</span>,
+                    <span>Bhaswanth Ayapilla</span>,
+                    <span>Jaycie Bussell</span>,
+                    <span>Guanya Shi</span>,
+                    <span>Jonathan Francis</span>,
+                    <span>Jean Oh</span>
+                  </div>
+                </div>
+                <div class="btn-links">
+                  <a class="btn btn-outline-primary btn-page-header btn-sm"
+                     href="https://arxiv.org/abs/2605.11564" target="_blank" rel="noopener">arXiv</a>
+                </div>
+              </div>
+            </div>
+
             <!-- TCB-VIO — RA-L -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="localization-mapping">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   TCB-VIO: Tightly-Coupled Focal-Plane Binary-Enhanced Visual Inertial Odometry
@@ -269,7 +316,7 @@
             </div>
 
             <!-- Structure from WiFi — ACC 2024 -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="localization-mapping">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   Structure from WiFi (SfW): RSSI-based Geometric Mapping of Indoor Environments
@@ -298,7 +345,7 @@
             </div>
 
             <!-- BIT-VIO — ICRA 2024 -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="localization-mapping">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   Visual Inertial Odometry using Focal Plane Binary Features (BIT-VIO)
@@ -328,13 +375,13 @@
             </div>
 
             <!-- MobileOcc — under review -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="computer-vision datasets-benchmarks">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   MobileOcc: A Human-Aware Semantic Occupancy Dataset for Mobile Robots
                 </div>
                 <div class="article-style">
-                  <em>Anonymous Conference (Under Double-blind Review)</em>
+                  <em>arXiv preprint, 2025</em>
                 </div>
                 <div class="stream-meta article-metadata">
                   <div>
@@ -357,13 +404,13 @@
             </div>
 
             <!-- Inverse k-visibility — under review -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="localization-mapping">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   Inverse k-visibility for RSSI-based Indoor Geometric Mapping
                 </div>
                 <div class="article-style">
-                  <em>Springer Autonomous Robots (Under Review)</em>
+                  <em>Springer Autonomous Robots, 2026</em>
                 </div>
                 <div class="stream-meta article-metadata">
                   <div>
@@ -386,13 +433,13 @@
             </div>
 
             <!-- M3RS — under review -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="planning-control">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
-                  M&sup3;RS: Multi-agent, Multi-objective, and Multi-mode Routing and Scheduling
+                  M&sup3;RS: Multi-Robot, Multi-Objective, and Multi-Mode Routing and Scheduling
                 </div>
                 <div class="article-style">
-                  <em>Anonymous Journal (Under Double-blind Review)</em>
+                  <em>Journal of Field Robotics, 2026</em>
                 </div>
                 <div class="stream-meta article-metadata">
                   <div>
@@ -419,7 +466,7 @@
             </div>
 
             <!-- Exposing Blindspots — IASEAI 2026 -->
-            <div class="media stream-item view-compact">
+            <div class="media stream-item view-compact" data-topics="computer-vision datasets-benchmarks">
               <div class="media-body">
                 <div class="section-subheading article-title mb-0 mt-0">
                   Exposing Blindspots: Cultural Bias Evaluation in Generative Image Models
@@ -537,17 +584,7 @@
   <script id="page-data" type="application/json">{"use_headroom":false}</script>
   <script src="/en/js/wowchemy.min.a2ed145159dd33ad55ff402163350b5d.js"></script>
 
-  <script>
-    // The bundled theme script unconditionally binds "/" to a search modal, but this
-    // site ships no search index and no modal markup, so the shortcut would only lock
-    // page scrolling. Undo that state if it ever fires.
-    document.addEventListener('keyup', function () {
-      if (!document.body.classList.contains('searching')) return;
-      document.body.classList.remove('searching', 'compensate-for-scrollbar');
-      var injected = document.getElementById('fancybox-style-noscroll');
-      if (injected) injected.remove();
-    });
-  </script>
+  <script src="/js/site.js"></script>
 
 </body>
 
